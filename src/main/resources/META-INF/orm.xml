@@ -9,5 +9,10 @@
 			select l from Land l order by l.id
 		</query>
 	</named-query>
+	<named-query name='WijnSoort.findByLand'>
+		<query>
+			select s from WijnSoort s inner join Land l on l.id=s.landid 
+		</query>
+	</named-query>
 
 </entity-mappings>

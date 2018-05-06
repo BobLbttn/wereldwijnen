@@ -22,6 +22,9 @@ public class IndexServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setAttribute("landen", ls.findAll());
+		if (request.getQueryString() != null) {
+			long id = Long.parseLong(request.getParameter("id"));
+		}
 		request.getRequestDispatcher(VIEW).forward(request, response);
 	}
 

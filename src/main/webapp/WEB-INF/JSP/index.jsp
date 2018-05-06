@@ -11,6 +11,7 @@
 
 <body>
 	<v:menu />
+	<v:lijstsoort />
 </body>
 
 </html>

@@ -9,11 +9,11 @@ header {
 }
 
 .vlaglist{
-	align: center;
+	transform: translate(0px,20px);
 }
 
 .vlaglist h1{
-	color: white;
+	color: #FFEC9F;
 	text-align: center;
 }
 

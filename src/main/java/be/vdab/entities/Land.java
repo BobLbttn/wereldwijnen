@@ -7,6 +7,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Version;
 
 
 @Entity
@@ -18,6 +19,9 @@ public class Land implements Serializable{
 	@GeneratedValue(strategy=GenerationType.IDENTITY) 
 	long id;
 	String naam;
+
+	@Version
+	int versie;
 
 	public Land() {
 	}
